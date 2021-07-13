@@ -5,7 +5,6 @@ date: "12/7/2021"
 output: html_document
 ---
 
-
 ## Parte 1
 
 ### 1. Calcula los valores númericos aproximados de:
@@ -13,7 +12,7 @@ output: html_document
 #### a.
 
 ```{r}
-setwd
+
 
 (0.3*0.15)/((0.3*0.15)+(0.2*0.8)+(0.5*0.12)) 
 
@@ -50,14 +49,15 @@ sum(1:1000)
 #### a.¿Cuántos elementos tiene?
 
 ```{r}
+
 length(grupo)
 #Hay 192 elementos 
 ##profesor al correr el knit me sale ese error pero en el R todo normal 
-```
 
-```{r}
+```
 #### b.¿En qué posiciones del vector está la letra “A”?
 
+```{r}
 
 posi<-c()
 for(x in 1:length(grupo)){
@@ -401,9 +401,6 @@ s
 
 ```
 
-
-
-
 ```{r}
 ?det
 
@@ -482,6 +479,7 @@ Calcula e imprime un vector con los nombres de las estaciones donde al menos uno
 ```{r}
 
 read.csv("rainfall.csv")
+rmarkdown::render("tarea 2 rocio mallqui.rmd", output_format = "html_document")
 
 ```
 ### de donde obtengo el archivo rainfall?? 
